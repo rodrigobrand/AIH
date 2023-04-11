@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIH</title>
+</head>
+<body>
+    <div>
+        <h1>AIH Eletrônica</h1>
+    </div>
+    <form>
+        <fieldset>
+            <h2>Identificação do paciente</h2>
+            <div>
+                <label>NOME DO PACIENTE</label>
+                <input type="text" name="nomePaciente" id="nomePaciente">                
+            </div>
+            <div>
+                <label>Nº DO PRONTUÁRIO</label>
+                <input type="text" name="numProntuario" id="numProntuario">
+            </div>
+            <div>
+                <label>CARTÃO NACIONAL DE SAÚDE (CNS)</label>
+                <input type="text" name="cns" id="cns" maxlength="15">
+            </div>
+            <div>
+                <label>DATA DE NASCIMENTO</label>
+                <input type="date" name="dataNascimento" id="dataNascimento">
+            </div>
+            <div>
+                <label>SEXO</label>
+                <label>
+                    <input type="radio" name="sexo" id="sexo" value="masc"> Masc.
+                </label>
+                <label>
+                    <input type="radio" name="sexo" id="sexo" value="fem"> Fem.
+                </label>
+            </div>
+            <div>
+                <label>NOME DA MÃE OU RESPONSÁVEL</label>
+                <input type="text" name="nomeMae" id="nomeMae">
+            </div>
+            <div>
+                <label>TELEFONE DE CONTATO</label>
+                <input type="text" name="telefone" id="telefone">
+            </div>
+            <div>
+                <label>ENDEREÇO (RUA, Nº, BAIRRO)</label>
+                <input type="text" name="endereco" id="endereco">
+            </div>
+            <div>
+                <label>MUNICÍPIO DE RESIDENCIA</label>
+                <input type="text" name="municipio" id="municipio">
+            </div>
+            <div>
+                <label>CÓD. IBGE MUNICÍPIO</label>
+                <input type="text" name="codigoIBGE" id="codigoIBGE">
+            </div>
+            <div>
+                <label>UF</label>
+                <select id="UF" name="UF">
+                    <option value="">Selecione</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+            <div>
+                <label>CEP</label>
+                <input type="text" name="cep" id="cep" maxlength="8">
+            </div>
+        </fieldset>
+        <fieldset>
+            <h2>JUSTIFICATIVA DA INTERNAÇÃO</h2>
+            <div>
+                <label>PRINCIPAIS SINAIS E SINTOMAS CLÍNICOS</label>
+                <textarea name="sintoma" id="sintoma"></textarea>
+            </div>
+            <div>
+                <label>CONDIÇÕES QUE JUSTIFICAM A INTERNAÇÃO</label>
+                <textarea name="justificativaInternacao"></textarea>
+            </div>
+            <div>
+                <label>PRINCIPAIS RESULTADOS DE PROVAS DIAGNÓSTICAS (RESULTADOS DE EXAMES REALIZADOS)</label>
+                <textarea name="resultadosDiagnosticos"></textarea>
+            </div>
+            <div>
+                <label>DIAGNÓSTICO INICIAL</label>
+                <input type="text" name="diagnosticoInicial" id="diagnosticoInicial">
+            </div>
+            <div>
+                <label>CID 10 PRINCIPAL</label>
+                <input type="text" name="CIDPrincipal" id="CIDPrincipal">
+            </div>
+            <div>
+                <label>CID 10 SECUNDÁRIO</label>
+                <input type="text" name="CIDSecundario" id="CIDSecundario">
+            </div>
+            <div>
+                <label>CID 10 CAUSAS ASSOCIADAS</label>
+                <input type="text" name="CIDCausas" id="CIDCausas">
+            </div>
+        </fieldset>
+        <fieldset>
+            <h2>PROCEDIMENTO SOLICITADO</h2>
+            <div>
+                <label>DESCRIÇÃO DO PROCEDIMENTO SOLICITADO</label>
+                <input type="text" name="descProcedimento" id="descProcedimento">
+            </div>
+            <div>
+                <label>CÓDIGO DO PROCEDIMENTO</label>
+                <input type="text" name="codProcedimento" id="codProcedimento">
+            </div>
+            <div>
+                <label>CLÍNICA</label>
+                <input type="text" name="clinica" id="clinica">
+            </div>
+            <div>
+                <label>CARÁTER DA INTERNAÇÃO</label>
+                <input type="text" name="caraterInternacao" id="caraterInternacao">
+            </div>
+            <div>
+                <label>DOCUMENTO</label>
+                <label>
+                    <input type="radio" name="tipoDocumento" id="tipoCNS" value="tipoCNS"> CNS
+                </label>
+                <label>
+                    <input type="radio" name="tipoDocumento" id="tipoCPF" value="tipoCPF"> CPF
+                </label>
+            </div>
+            <div>
+                <label>Nº DOCUMENTO (CNS/CPF) DO PROFISSIONAL SOLICITANTE/ASSISTENTE</label>
+                <input type="text" name="nDocumentoProfissional" id="nDocumentoProfissional">
+            </div>
+            <div>
+                <label>NOME DO PROFISSIONAL SOLICITANTE/ASSISTENTE</label>
+                <input type="text" name="nomeProfissional" id="nomeProfissional">
+            </div>
+            <div>
+                <label>DATA DA SOLICITAÇÃO</label>
+                <input type="date" name="dataSolicitacao" id="dataSolicitacao">
+            </div>
+            <div>
+                <label>HORA DA SOLICITAÇÃO</label>
+                <input type="time" name="horaSolicitacao" id="horaSolicitacao">
+            </div>
+        </fieldset>
+        <fieldset>
+            <h2>PREENCHER EM CASO DE CAUSAS EXTERNAS (ACIDENTES OU VIOLÊNCIAS)</h2>
+            <div>
+                <label><input type="radio" name="tipoAcidente" id="acTransito" value="acTransito">ACIDENTE DE TRÂNSITO</label>
+                <label><input type="radio" name="tipoAcidente" id="acTrabalhoTipico" value="acTrabalhoTipico">ACIDENTE TRABALHO TÍPICO</label>
+                <label><input type="radio" name="tipoAcidente" id="acTrabalhoTrajeto" value="acTrabalhoTrajeto">ACIDENTE TRABALHO TRAJETO</label>
+            </div>
+            <div>
+                <label>CNPJ DA SEGURADORA</label>
+                <input type="text" name="CNPJSeguradora" id="CNPJSeguradora" maxlength="13">
+            </div>
+            <div>
+                <label>Nº DO BILHETE</label>
+                <input type="text" name="nBilhete" id="nBilhete">
+            </div>
+            <div>
+                <label>SÉRIE</label>
+                <input type="text" name="serie" id="serie">
+            </div>
+            <div>
+                <label>CNPJ EMPRESA</label>
+                <input type="text" name="CNPJEmpresa" id="CNPJEmpresa" maxlength="13">
+            </div>
+            <div>
+                <label>CNAE DA EMPRESA</label>
+                <input type="text" name="cnae" id="cnae">
+            </div>
+            <div>
+                <label>CBOR</label>
+                <input type="text" name="cbor" id="cbor">
+            </div>
+            <div>
+                <label>VÍNCULO COM A PREVIDÊNCIA</label>
+                <label><input type="radio" name="vinculoPrevidencia" id="empregado" value="empregado">EMPREGADO</label>
+                <label><input type="radio" name="vinculoPrevidencia" id="empregador" value="empregador">EMPREGADOR</label>
+                <label><input type="radio" name="vinculoPrevidencia" id="autonomo" value="autonomo">AUTÔNOMO</label>
+                <label><input type="radio" name="vinculoPrevidencia" id="desempregado" value="desempregado">DESEMPREGADO</label>
+                <label><input type="radio" name="vinculoPrevidencia" id="aposentado" value="aposentado">APOSENTADO</label>
+                <label><input type="radio" name="vinculoPrevidencia" id="naoSegurado" value="naoSegurado">NÃO SEGURADO</label>
+            </div>
+        </fieldset>
+        <input type="submit">
+    </form>
+</body>
+</html>
